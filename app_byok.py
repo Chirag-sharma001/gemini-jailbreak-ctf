@@ -5,7 +5,7 @@ import datetime
 # --- PAGE SETUP ---
 st.set_page_config(page_title="AI Jailbreak CTF", page_icon="🤖")
 st.title("🤖 The Unbreakable Bot desined by AITR-ACM ")
-st.description("Find the Hidden Password/Flag")
+
 
 # --- SECRET CONFIGURATION (The Flag) ---
 FLAG = "CTF{By0K_1s_Th3_Sm4rt_W4y}"  # Change this to your real flag
@@ -99,4 +99,5 @@ if prompt := st.chat_input("Attempt to get the flag..."):
         st.error(f"API Error: {e}")
 
         st.warning("Double check your API key. It may be invalid or out of quota.")
+
 
